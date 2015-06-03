@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.androidhive.slidingmenu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="info.androidhive.proclubDaiict.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="info.androidhive.proclubDaiict.MAINACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="info.androidhive.proclubDaiict.About"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="info.androidhive.slidingmenu.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="info.androidhive.proclubDaiict.BlogView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="info.androidhive.slidingmenu.BLOGVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="info.androidhive.proclubDaiict.NextActivity"
+            android:label="Next Screen">
+        </activity>
+        <activity
+            android:theme="@style/Theme.Splash"
+            android:name="info.androidhive.proclubDaiict.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name="info.androidhive.proclubDaiict.MyAlarmService"
+            android:enabled="true" />
+
+        <receiver android:name="info.androidhive.proclubDaiict.MyReceiver"/>
+
+        <service android:name="info.androidhive.proclubDaiict.service.ScheduleService" />
+        <service android:name="info.androidhive.proclubDaiict.service.NotifyService" />
+
+
+    </application>
+
+</manifest>

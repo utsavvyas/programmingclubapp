@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About App:\nThis is the official app of Programming Club of DA-IICT.You can get all the blogs here\n\n"
+        android:textSize="25dp"
+        android:textColor="#ff2b0aff"
+        android:id="@+id/aboutApp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Developers:\nThis app was developed by Parth Panchal and Utsav Vyas.We would be happy to hear any comments or suggestions."
+        android:textSize="20dp"
+        android:textColor="#ff1600ff"
+        android:id="@+id/aboutDev" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parth Panchal:\nparthpacnhal12196@gmail.com\nUtsav Vyas:\nutsavvyas16@gmail.com"
+        android:textSize="20dp"
+        android:textColor="#ff000000"
+        android:id="@+id/aboutDev1" />
+</LinearLayout>

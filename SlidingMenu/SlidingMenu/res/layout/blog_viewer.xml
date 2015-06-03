@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="25dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:background="#ffc9deee" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:background="#ffd4eee3"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:text="TextView"
+            android:scrollbars = "vertical"
+            android:autoLink="web"
+            android:textColorLink="#ffff3e55"
+            android:background="#ffd4eee3"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="View Comments"
+            android:textSize="25dp"
+            android:id="@+id/list_comment"
+            android:autoLink="web"
+            ></Button>
+    </LinearLayout>
