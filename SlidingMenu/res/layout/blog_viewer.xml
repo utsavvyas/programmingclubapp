@@ -12,6 +12,7 @@
             android:textSize="25dp"
             android:textAllCaps="true"
             android:textStyle="bold"
+            android:textAlignment="center"
             android:background="#ffc9deee" />
 
         <TextView
