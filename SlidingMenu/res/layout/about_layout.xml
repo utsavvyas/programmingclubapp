@@ -21,7 +21,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Parth Panchal:\nparthpacnhal12196@gmail.com\nUtsav Vyas:\nutsavvyas16@gmail.com"
+        android:text="Parth Panchal:\nparthpanchal12196@gmail.com\nUtsav Vyas:\nutsavvyas16@gmail.com"
         android:textSize="20dp"
         android:textColor="#ff000000"
         android:id="@+id/aboutDev1" />
