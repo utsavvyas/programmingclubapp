@@ -59,7 +59,17 @@ public class BlogView extends Activity{
         t3 = (TextView)(findViewById(R.id.textView3));
         t3.setMovementMethod(new ScrollingMovementMethod());
         t3.setMovementMethod(LinkMovementMethod.getInstance());
-
+        Button comm=(Button)(findViewById(R.id.list_comment));
+        comm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in=new Intent("info.androidhive.proclubDaiict.COMMENTVIEW");
+                Bundle b=new Bundle();
+                b.putStringArrayList("comments",array);
+                in.putExtras(b);
+                startActivity(in);
+            }
+        });
         if(t1==null)
             System.out.println("1");
         if(t2==null)
